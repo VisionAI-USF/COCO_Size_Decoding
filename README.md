@@ -1,1 +1,1 @@
-# Size encoding/decoding in COCO dataset
+# Size encoding/decoding into texture using COCO dataset
