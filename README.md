@@ -24,43 +24,49 @@ sklearn: 0.20.0<br><br>
 The command is not required. Takes as an argument path to a folder.<br>
 Define <b>Working Derectory</b>.The application stores intermediate data as well as results of experiments in files. By default all the data is stored in the same folder where the code is located. Because it can be messy if several experiments performed each experiment can be assigned to a particular forlder such that all temporal and resulting data will be stored in the defined folder.<br><br>
 
---load<br>
+<b>--load</b><br>
 The command is not required. Takes no arguments.<br>
-If provided then application will <b>load COCO dataset</b> from the Internet. Result will be stored to <b>&lt;Working Derectory&gt;/data/</b> folder <br><br>
+If provided then application will <b>load COCO dataset</b> from the Internet. Result will be stored to <b>&lt;Working Derectory&gt;/data/</b> folder. Note: default tools provide small downloading speed as well as there were cases of connection errors that required to restart loading again. Thus, <b>we recommend download COCO source files manually</b> and place them in <b>&lt;Working Derectory&gt;/data/</b> folder.<br><b>The application requires:</b><br>
+2014 Train images (http://images.cocodataset.org/zips/train2014.zip).<br>
+2014 Validation images (http://images.cocodataset.org/zips/val2014.zip).<br>
+2017 Train images (http://images.cocodataset.org/zips/train2017.zip).<br>
+2017 Validation images (http://images.cocodataset.org/zips/val2017.zip).<br>
+2014 Train/Val annotations (http://images.cocodataset.org/annotations/annotations_trainval2014.zip).<br>
+2017 Train/Val annotations (http://images.cocodataset.org/annotations/annotations_trainval2017.zip).<br><br>
 
---unzip_preloaded<br>
+<b>--unzip_preloaded</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---category:<br>
+<b>--category:&lt;&gt;</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---filter<br>
+<b>--filter</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---smallest_axe:<br>
+<b>--smallest_axe:&lt;&gt;</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---largest_axe:<br>
+<b>--largest_axe:&lt;&gt;</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---median:<br>
+<b>--median:&lt;&gt;</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---resize:<br>
+<b>--resize:&lt;&gt;</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---run_cv<br>
+<b>--run_cv</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br>
 
---auc<br>
+<b>--auc</b><br>
 The command is not required. Takes as an argument path to a folder.<br>
 text<br><br><br><br>
 
@@ -77,5 +83,10 @@ In case if you have problems with running the code, please contact the correspon
 
 [1] TBA
 
+
+<H2>Citation</H2><br>
+
+If you use this code in your work, please cite it as:
+TBA
 
 
