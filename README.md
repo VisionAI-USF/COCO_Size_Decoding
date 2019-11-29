@@ -59,7 +59,7 @@ Create a folder and store objects images of defined categories.
 The command is required. Rescale filtered images to the uniform size. Images will be rescaled into square image with image size equal to defined values. <b>NOTE:</b>In our experiments we used 640x640 pixel image resolution as an input for the CNN. Thus, usage other values but 640 require changes in code i.e. change CNN input image size.<br>
 Example:<br>
 python3 main.py --resize:640<br>
-Resize <b>filtered<b/> images into 640x640 images. Result will be used in the experiment.<br><br>
+Resize <b>filtered</b> images into 640x640 images. Result will be used in the experiment.<br><br>
 
 <b>--smallest_axe:&lt;Integer value: the smallest height/width image value&gt;</b><br>
 The command is not required. Remove from the dataset images which height or width is smaller than defined value.<br>
@@ -118,6 +118,5 @@ In case if you have problems with running the code, please contact the correspon
 
 If you use this code in your work, please cite it as:
 TBA
-
 
 
