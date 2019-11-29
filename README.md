@@ -20,7 +20,7 @@ sklearn: 0.20.0<br><br>
 
 <H2>Execution parameters</H2><br>
 
---tmp_dir:'path to a directory'<br>
+<u>--tmp_dir:'path to a directory'</u><br>
 The command is not required. Takes as an argument path to a folder.<br>
 Define <b>Working Derectory</b>.The application stores intermediate data as well as results of experiments in files. By default all the data is stored in the same folder where the code is located. Because it can be messy if several experiments performed each experiment can be assigned to a particular forlder such that all temporal and resulting data will be stored in the defined folder.<br><br>
 
