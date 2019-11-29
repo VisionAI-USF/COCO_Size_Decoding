@@ -95,7 +95,7 @@ Computes AUROC for each iteration of cross-valitation of for each selected categ
 <br><br><br><br>
 
 
-Examples:<br>
+<b>Examples:</b><br>
 It is possible to run the application iteratively. First is it possible to download the dataset and then, with the second run, filter categories from the dataset. Nevertheless, we recommend to run the application with all the defined parameters at once. For example, in case when the required files are manually downloaded the experement performace can be done by running following command:<br>
 python3 main.py --unzip_preloaded --filter --resize:640 --run_cv --tmp_dir:./example_dir/<br>
 The application will unzip COCO dataset files from the ./example_dir/data/ folder and perform the experiment.<br>
@@ -116,7 +116,7 @@ In case if you have problems with running the code, please contact the correspon
 
 <H2>Citation</H2><br>
 
-If you use this code in your work, please cite it as:
+If you use this results of this code in your work, please cite it as:
 TBA
 
 
