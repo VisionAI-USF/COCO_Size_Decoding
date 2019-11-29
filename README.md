@@ -26,7 +26,7 @@ Define <b>Working Derectory</b>.The application stores intermediate data as well
 
 --load<br>
 The command is not required. Takes no arguments.<br>
-If provided then application will <b>load COCO dataset</b> from the Internet. Result will be stored to <b>&ltWorking Derectory&gt;/data/</b> folder <br><br>
+If provided then application will <b>load COCO dataset</b> from the Internet. Result will be stored to <b>&lt;Working Derectory&gt;/data/</b> folder <br><br>
 
 --unzip_preloaded<br>
 The command is not required. Takes as an argument path to a folder.<br>
