@@ -22,11 +22,11 @@ sklearn: 0.20.0<br><br>
 
 --tmp_dir:'path to a directory'<br>
 The command is not required. Takes as an argument path to a folder.<br>
-Define <b>Working Derectory<b>.The application stores intermediate data as well as results of experiments in files. By default all the data is stored in the same folder where the code is located. Because it can be messy if several experiments performed each experiment can be assigned to a particular forlder such that all temporal and resulting data will be stored in the defined folder.<br><br>
+Define <b>Working Derectory<\b>.The application stores intermediate data as well as results of experiments in files. By default all the data is stored in the same folder where the code is located. Because it can be messy if several experiments performed each experiment can be assigned to a particular forlder such that all temporal and resulting data will be stored in the defined folder.<br><br>
 
 --load<br>
 The command is not required. Takes no arguments.<br>
-If provided then application will <b>load COCO dataset<b> from the Internet. Result will be stored to <b><Working Derectory>/data/<b> folder <br><br>
+If provided then application will <b>load COCO dataset<\b> from the Internet. Result will be stored to <b><Working Derectory>/data/<\b> folder <br><br>
 
 --unzip_preloaded<br>
 The command is not required. Takes as an argument path to a folder.<br>
