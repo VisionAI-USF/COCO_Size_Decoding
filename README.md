@@ -99,12 +99,12 @@ Examples:<br>
 It is possible to run the application iteratively. First is it possible to download the dataset and then, with the second run, filter categories from the dataset. Nevertheless, we recommend to run the application with all the defined parameters at once. For example, in case when the required files are manually downloaded the experement performace can be done by running following command:<br>
 python3 main.py --unzip_preloaded --filter --resize:640 --run_cv --tmp_dir:./example_dir/<br>
 The application will unzip COCO dataset files from the ./example_dir/data/ folder and perform the experiment.<br>
-For filtering, the same command can be modified:
+For filtering, the same command can be modified:<br>
 python3 main.py --unzip_preloaded --filter --resize:640 --run_cv --tmp_dir:./example_dir/ --smallest_axe:80 --median:10<br>
 The application will unzip COCO dataset files from the ./example_dir/data/ folder, remove images according to defined filtering commands and perform the experiment.
 <br><br>
 
-<H2>Execution issues</H2><br>
+<H2>Issues</H2><br>
 
 In case if you have problems with running the code, please contact the corresponding authore of the paper [1].
 
@@ -118,5 +118,8 @@ In case if you have problems with running the code, please contact the correspon
 
 If you use this code in your work, please cite it as:
 TBA
+
+
+
 
 
