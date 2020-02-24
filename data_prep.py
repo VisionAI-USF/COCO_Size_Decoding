@@ -1,7 +1,7 @@
 import sys
 ver = sys.version
 import zipfile
-if ver[0] == 3:
+if ver[0] == '3':
     import urllib.request  as urllib2 
 else:
     import urllib2
@@ -38,12 +38,20 @@ def resize_patches_to_size(params):
             resized_image = resize(I, (resize_value, resize_value),
                        anti_aliasing=False)
             io.imsave(cur_folder + img_path, resized_image)
-            if cur_area < median_area:
-                txt = src_folder+img_path+':0\n'
+            if params['regression']:
+
+                c_label = (float(cur_area) / (params['resize_to']*params['resize_to']))*2 - 1
+                txt = src_folder + img_path + ':' + str(c_label) + '\n'
                 labelFile.write(txt)
+
             else:
-                txt = src_folder+img_path+':1\n'
-                labelFile.write(txt)
+
+                if cur_area < median_area:
+                    txt = src_folder+img_path+':0\n'
+                    labelFile.write(txt)
+                else:
+                    txt = src_folder+img_path+':1\n'
+                    labelFile.write(txt)
         labelFile.close()
 
 

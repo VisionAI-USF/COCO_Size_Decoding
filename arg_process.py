@@ -92,12 +92,26 @@ def check_if_auc(argv):
         return False
 
 
+def check_if_regression(argv):
+    if argv.lower() == '--regression':
+        return True
+    else:
+        return False
+
+
+def check_if_mse(argv):
+    if argv.lower() == '--mse':
+        return True
+    else:
+        return False
+
+
 
 def check_arguments(argv, params):
 	argn = len(argv)
 	result = {'test_flag':False, 'load_flag':False,'filter_flag':False,
     'resize_flag':False, 'resize_value':0, 'unzip_preloaded':False,'run_cv':False,
-    'auc':False}
+    'auc':False,'regression':False,'mse':False}
 	for j in range(1,argn):
 		result['test_flag'] = (check_if_test(argv[j]) or result['test_flag'])
 		result['unzip_preloaded'] = (check_if_unzip_preloaded(argv[j]) or result['unzip_preloaded'])
@@ -105,6 +119,8 @@ def check_arguments(argv, params):
 		result['filter_flag'] = (check_if_filter(argv[j]) or result['filter_flag'])
 		result['run_cv'] = (check_if_run_cv(argv[j]) or result['run_cv'])
 		result['auc'] = (check_if_auc(argv[j]) or result['auc'])
+		result['regression'] = (check_if_regression(argv[j])) or result['regression']
+		result['mse'] = (check_if_mse(argv[j])) or result['mse']
 		flag, flag_value = check_if_resize(argv[j])
 		if flag:
 			result['resize_flag'] = flag
@@ -129,5 +145,8 @@ def check_arguments(argv, params):
 		flag, flag_value = check_if_category(argv[j])
 		if flag:
 			params['category'] = flag_value
+		flag = check_if_regression(argv[j])
+		if flag:
+			params['regression'] = flag
             
 	return result, params

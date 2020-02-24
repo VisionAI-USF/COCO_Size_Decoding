@@ -2,33 +2,35 @@ import sys
 from arg_process import *
 from test import *
 from data_prep import *
-from cnn_data_prep import *
+#from cnn_data_prep import *
 from classifier import *
 from compute_auc import *
-
+from regression_experiment import *
+from compute_mse import *
 
 params = {
-# Application parameters
-'tmp_dir':'./', # temporal results directory
-'smallest_axe':0, # smallest axes length (pixels), both x and y
-'largest_axe':0, # largest axes length (pixels), both x and y
-'median':0, # median (percent)
-'resize_to':640, # resize to image with given size
+  # Application parameters
+  'tmp_dir': './',  # temporal results directory
+  'smallest_axe': 0,  # smallest axes length (pixels), both x and y
+  'largest_axe': 0,  # largest axes length (pixels), both x and y
+  'median': 0,  # median (percent)
+  'resize_to': 640,  # resize to image with given size
+  'regression': False,
 
-# Neural network parameter:
-'batch_size': 32,
-'learn_rate': 0.0001,
-'decay': 0.001,
-'epochs': 100,
-'dropout': 0.75,
-'filters': 8,
-'dense': 256,
-'activation': 'relu',
-'patience': 10,
-# Category to experiment on
-'category': ['dog','cat','bear'],
-# Seeds for train/test splits
-'seeds': [1, 2, 3, 4, 5]
+  # Neural network parameter:
+  'batch_size': 32,
+  'learn_rate': 0.0001,
+  'decay': 0.001,
+  'epochs': 100,
+  'dropout': 0.75,
+  'filters': 8,
+  'dense': 256,
+  'activation': 'relu',
+  'patience': 10,
+  # Category to experiment on
+  'category': ['dog', 'cat', 'bear'],
+  # Seeds for train/test splits
+  'seeds': [1, 2, 3, 4, 5]
 }
 
 
@@ -52,6 +54,10 @@ def check_input(argv):
 		perform_5_2_CV(params)
 	if args['auc']:
 		get_CV_AUC(params)
+	if args['regression']:
+		get_regression_res(params)
+	if args['mse']:
+		get_CV_MSE(params)
 	
 
 
