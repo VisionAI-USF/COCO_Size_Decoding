@@ -88,9 +88,26 @@ Perform 5 times 2-fold cross-validation.<br><br>
 
 <b>--auc</b><br>
 The command is not required. Takes no argumens.<br>
+Has to be executed if/after "--run_cv" is performed.
 If defined, then application will compute Area Under Receiver Operating Characteristic Curve (AUROC) for each iteration of cross-valitation of for each selected category.
 Example:<br>
 python3 main.py --auc<br>
+Computes AUROC for each iteration of cross-valitation of for each selected category.
+<br><br>
+
+<b>--regression</b><br>
+The command is required. Takes no arguments. Perform 5 times 2-fold cross-validation regression training on the resulting dataset for each cross-validation iteration for each defined category.<br>
+Example:<br>
+python3 main.py --regression<br>
+Perform 5 times 2-fold cross-validation regression training.<br><br>
+
+
+<b>--mse</b><br>
+The command is not required. Takes no argumens.<br>
+Has to be executed if/after "--regression" is performed.
+If defined, then application will compute Mean Square Error for the regression and Pearson Correlation Coefficient for labels and predictions.
+Example:<br>
+python3 main.py --mse<br>
 Computes AUROC for each iteration of cross-valitation of for each selected category.
 <br><br><br><br>
 
