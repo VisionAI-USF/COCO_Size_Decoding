@@ -128,13 +128,14 @@ In case if you have problems with running the code, please contact the correspon
 
 <H2>Reference</H2><br>
 
-[1] TBA
+[1] Cherezov D, Paul R, Fetisov N, Gillies RJ, Schabath MB, Goldgof DB, Hall LO. Lung nodule sizes are encoded when scaling CT image for CNN's. Tomography. 2020 Jun;6(2):209.
 
 
 <H2>Citation</H2><br>
 
 If you use this results of this code in your work, please cite it as:
-TBA
+
+Cherezov D, Paul R, Fetisov N, Gillies RJ, Schabath MB, Goldgof DB, Hall LO. Lung nodule sizes are encoded when scaling CT image for CNN's. Tomography. 2020 Jun;6(2):209.
 
 
 
